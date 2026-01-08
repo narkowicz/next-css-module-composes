@@ -1,0 +1,25 @@
+.large {
+  font-size: 52px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.upperItalic {
+  composes: italic;
+
+  text-transform: uppercase;
+}
+
+.flat {
+  composes: large italic bold;
+}
+
+.nested {
+  composes: large upperItalic;
+}
